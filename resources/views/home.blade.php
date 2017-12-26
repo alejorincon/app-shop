@@ -83,13 +83,16 @@
                         </tbody>
                     </table>
 
+
+
                 <div class="text-center"> 
                 	<form method="post" action="{{ url('/order') }}"> 
                 		{{ csrf_field() }}
-                		
+
                 		<button class="btn btn-primary btn-round">
 							<i class="material-icons">done</i> Realizar pedido
 						</button>
+						
                 	</form>
                 	
                 </div>

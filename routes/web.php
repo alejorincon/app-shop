@@ -14,6 +14,7 @@ Route::post('/order', 'CartController@update');
 
 
 Route::middleware(['auth', 'admin'])->prefix('admin')->namespace('Admin')->group(function() {
+	
     Route::get('/products', 'ProductController@index'); 
 	Route::get('/products/create', 'ProductController@create');  // formulario
 	Route::post('/products','ProductController@store');  // registrar
